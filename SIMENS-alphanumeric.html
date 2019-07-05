@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    function alpha(){
+        var str1=document.getElementById("str1").value;
+        str1 = str1.toUpperCase();
+        var result=0;
+        for(var i=0 ; i<str1.length ; i++){
+            result=result*26 + str1.charCodeAt(i) - 64;
+        }
+        
+document.write(result);
+    }
+</script>
+<body>
+    <input type="button" onclick="alpha()" value="click me">
+    <input type="text" id="str1" >
+</body>
+</html>

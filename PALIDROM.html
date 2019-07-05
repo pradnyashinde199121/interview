@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter word:<input type="text" id="string1">
+    <input type="button" onclick="find1()" value="click me">
+  
+    <script>  
+        function find1(){
+             string1=document.getElementById("string1").value;
+             string2="";
+             i=string1.length;
+             for(var j=i;j>=0;j--){
+                 string2=string2 + string1.charAt(j);
+                 document.write(string2 +"<br>");
+                }
+                if(string1==string2){
+                    alert("string is palindrome");
+                }
+                else{
+                    alert("string is not-palindrome");
+                
+                }
+            
+            }
+
+        
+        
+     
+    </script>
+</body>
+</html>

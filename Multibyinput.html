@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    </head>
+    <script>
+        debugger
+        function multi(){
+var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        
+       count =0;
+       c=0;
+       
+      while(count < b){
+         var c=c+a;
+          count++;
+      }
+      document.getElementById("answer").value= c;
+        }
+     
+      </script>
+      <body>
+          a:  <input id="first">
+           b: <input id="Second">
+           <button onclick="multi()">multyply</button></br></br>
+           b: <input id="answer">
+      </body>
+      </html>
+          
+           

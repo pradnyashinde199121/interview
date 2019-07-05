@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" onclick="find1()" value="click me">
+  
+    <script>  
+   
+        function find1(){
+            var n=5;
+            sum1=n*((n+1)/2);
+            document.write("sum1 is"+ sum1);
+            
+            var numbers = [1, 2, 3, 5] // sums to 100
+            var sum = 0;
+             for (var i = 0; i < numbers.length; i++) {
+             sum += numbers[i];
+            
+             }
+             document.write(" <br> sum is"+ sum);
+        var missing=sum1-sum;
+        document.write(" <br> missing no is"+ missing);
+        }
+    </script>
+</body>
+</html>
